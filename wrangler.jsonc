@@ -1,0 +1,14 @@
+// Cloudflare Workers 정적 자산. siwon.it.kr의 다른 사이트들과 같은 꼴이다.
+// 빌드 단계가 없다 — dist/의 파일이 곧 사이트다(원래 Netlify에 손으로 올리던 사이트라
+// 소스가 따로 없었고, 2026-09-13 이사 때 라이브에서 받아 이 저장소로 통일했다).
+// not_found_handling은 주지 않는다 — 없는 파일이 index.html로 가려지면 빠진 자산이 안 보인다.
+{
+  "name": "medial-demo",
+  "compatibility_date": "2026-09-13",
+  "assets": {
+    "directory": "./dist"
+  },
+  "routes": [
+    { "pattern": "medial-demo.siwon.it.kr", "custom_domain": true }
+  ]
+}
